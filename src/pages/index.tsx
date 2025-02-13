@@ -20,8 +20,18 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
+            to="https://voltrevo.github.io/mpc-hello">
+            Instant Demo
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Tutorial
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/intro">
+            What is MPC?
           </Link>
         </div>
       </div>

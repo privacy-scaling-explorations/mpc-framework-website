@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 type FeatureItem = {
   title: string;
@@ -11,32 +12,33 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'TypeScript from End to End',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        MPC Framework is a TypeScript API and supports&nbsp;
+        <Link to="https://github.com/voltrevo/summon">Summon</Link>
+        &nbsp;for writing circuits using TypeScript syntax.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Fully Secure',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        MPC Framework supports malicious secure MPC, which means the
+        parties cannot cheat even if N-1 work together against one party.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Client First',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        MPC Framework does not rely on beefy servers or any complex non-portable
+        software. Our most important supported platform is the web on mobile.
       </>
     ),
   },
