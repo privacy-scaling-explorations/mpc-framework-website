@@ -1,47 +1,66 @@
 {
-  "name": "mpc-framework-website",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
-  },
-  "dependencies": {
-    "@docusaurus/core": "3.7.0",
-    "@docusaurus/preset-classic": "3.7.0",
-    "@mdx-js/react": "^3.0.0",
-    "clsx": "^2.0.0",
-    "prism-react-renderer": "^2.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/tsconfig": "3.7.0",
-    "@docusaurus/types": "3.7.0",
-    "typescript": "~5.6.2"
-  },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 3 chrome version",
-      "last 3 firefox version",
-      "last 5 safari version"
-    ]
-  },
-  "engines": {
-    "node": ">=18.0"
-  }
+	"name": "@eightshift/docs",
+	"version": "9.1.1",
+	"description": "A documentation website for Eightshift open source projects.",
+	"author": {
+		"name": "Eightshift team",
+		"email": "team@eightshift.com",
+		"url": "https://eightshift.com/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/infinum/eightshift-docs.git"
+	},
+	"keywords": [
+		"frontend",
+		"scss",
+		"mixin",
+		"js",
+		"utility",
+		"module",
+		"WordPress"
+	],
+	"bugs": {
+		"url": "https://github.com/infinum/eightshift-docs/issues"
+	},
+	"scripts": {
+		"docusaurus": "docusaurus",
+		"start": "docusaurus start",
+		"build": "docusaurus build",
+		"deploy": "docusaurus deploy",
+		"serve": "docusaurus serve",
+		"clear": "docusaurus clear"
+	},
+	"dependencies": {
+		"@docusaurus/core": "^3.7.0",
+		"@docusaurus/preset-classic": "^3.7.0",
+		"@eightshift/ui-components": "^2.0.1",
+		"@infinum/docusaurus-theme": "^0.5.0",
+		"@mdx-js/react": "^3.1.0",
+		"@wp-playground/client": "^1.0.23",
+		"clsx": "^2.1.1",
+		"es-text-loader": "file:plugins/es-text-loader",
+		"prism-react-renderer": "^2.4.1",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-scripts": "^5.0.1"
+	},
+	"browserslist": {
+		"production": [
+			">0.5%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"raw-loader": "^4.0.2"
+	},
+	"overrides": {
+		"jiti": "1.21.0"
+	}
 }
