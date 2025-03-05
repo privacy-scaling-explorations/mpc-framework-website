@@ -11,5 +11,5 @@
   <polygon points="0,-100 95,-31 59,81 -59,81 -95,-31" fill="url(#purpleGradient)" stroke="purple" stroke-width="3"/>
 
   <!-- Pentagram -->
-  <polygon points="0,-100 59,81 -95,-31 95,-31 -59,81" fill="none" stroke="black" stroke-width="3"/>
+  <polygon points="0,-97 57,78 -92,-30 92,-30 -57,78" fill="none" stroke="black" stroke-width="3"/>
 </svg>
