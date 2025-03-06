@@ -3,14 +3,14 @@ const { themes } = require('prism-react-renderer');
 const darkTheme = themes.dracula;
 
 module.exports = {
-	title: 'Eightshift Development kit',
+	title: 'MPC Framework',
 	tagline:
-		'All the tools you need to start building a modern WordPress project, using all the latest front end development tools.',
-	url: 'https://eightshift.com',
+		'Create secure MPC apps easily in TypeScript.',
+	url: 'https://mpc.pse.dev',
 	baseUrl: '/',
 	favicon: '/img/pentagram.svg',
-	organizationName: 'infinum',
-	projectName: 'eightshift-docs',
+	organizationName: 'PSE',
+	projectName: 'mpc-framework-website',
 	staticDirectories: ['static'],
 	scripts: [
 		{
@@ -21,27 +21,16 @@ module.exports = {
 	],
 	themeConfig: {
 		navbar: {
+			title: 'MPC Framework',
 			logo: {
-				alt: 'Eightshift DevKit Logo',
+				alt: 'MPC Framework Logo',
 				src: '/img/pentagram.svg',
 			},
 			items: [
 				{
 					to: 'docs/welcome',
 					activeBasePath: 'docs',
-					label: 'DevKit',
-					position: 'right',
-				},
-				{
-					to: 'forms/welcome',
-					activeBasePath: 'forms',
-					label: 'Forms',
-					position: 'right',
-				},
-				{
-					to: '/components/welcome',
-					activeBasePath: 'components',
-					label: 'Components',
+					label: 'Docs',
 					position: 'right',
 				},
 				{
@@ -63,46 +52,6 @@ module.exports = {
 					position: 'right',
 				},
 			],
-		},
-		footer: {
-			links: [
-				{
-					title: 'Community',
-					items: [
-						{
-							label: 'Facebook',
-							href: 'https://facebook.com/infinumcom',
-							icon: 'facebook',
-						},
-						{
-							label: 'Instagram',
-							href: 'https://instagram.com/infinumcom/',
-							icon: 'instagram',
-						},
-						{
-							label: 'Twitter',
-							href: 'https://twitter.com/infinum',
-							icon: 'twitter',
-						},
-						{
-							label: 'Clutch',
-							href: 'https://clutch.co/profile/infinum',
-							icon: 'clutch',
-						},
-						{
-							label: 'Dribbble',
-							href: 'https://dribbble.com/infinum',
-							icon: 'dribbble',
-						},
-						{
-							label: 'LinkedIn',
-							href: 'https://linkedin.com/company/infinum/',
-							icon: 'linkedin',
-						},
-					],
-				},
-			],
-			copyright: 'Made with ❤️ by Infinum team.',
 		},
 		algolia: {
 			appId: 'CWB1S6U3C4',

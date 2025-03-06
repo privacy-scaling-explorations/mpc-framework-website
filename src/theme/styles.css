@@ -79,3 +79,27 @@
 .esd-space-v > :not(:last-child) {
 	margin-bottom: 0.625rem !important;
 }
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	padding: 2rem 6rem;
+}
+
+@media (max-width: 900px) {
+	.footer {
+		flex-direction: column;
+		gap: 10px;
+		align-items: center;
+	}
+}
+
+.grow {
+	flex-grow: 1;
+}
+
+.social-icons {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+}
