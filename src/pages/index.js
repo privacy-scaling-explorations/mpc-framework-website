@@ -19,27 +19,35 @@ export default function Home() {
             wrapperClassName='es-footer-white'
         >
             <Hero
-                title='Eightshift Development Kit'
-                subtitle='All the tools you need to start building a modern WordPress project, using all the latest front end development tools.'
+                title='MPC Framework'
+                subtitle='Create secure MPC apps easily in TypeScript.'
                 buttonLabel='Get started'
                 buttonUrl='#get-started'
-                imageUrl='/img/pentagram.svg'
+                imageUrl='/img/kids-puzzle-mpc.webp'
                 gray
             />
 
             <ImageAndText
-                title='A WordPress boilerplate from the future'
-                imageUrl='/img/pentagram.svg'
+                title="What is MPC?"
+                imageUrl='/img/kids-magic-burgers.webp'
                 gray
             >
-                Eightshift Development kit makes building complex WordPress themes and plugins painless.
-                <br /> <br />
-                Use and extend our block and component collection to build out dynamic Gutenberg blocks.
-                Extract commonly-used UI elements into reusable components.
-                Forget about block registration and save callbacks.
-                Build a REST route in minutes.
-                <br /> <br />
-                You&apos;ll never want to go back!
+                Imagine you want to go eat with someone. You'd like to go somewhere you both like,
+                but you're apprehensive about revealing your true preferences. The other person
+                might agree prematurely to please you, or they could take issue with an unusual
+                suggestion.
+                <br />
+                <br />
+                MPC is like having a special kind of telepathy - it gives you the answer to a
+                question over your combined inputs, without having to share those inputs with
+                each other, or anyone else. The only thing that is revealed is the answer to your
+                mutual question.
+                <br />
+                <br />
+                It's not actually magic, but <b>M</b>ulti-<b>P</b>arty <b>C</b>omputation is
+                a cryptographic protocol which achieves the same thing. Inputs are encoded as
+                bits and questions are formalized as boolean circuits over those bits. MPC
+                Framework provides tools to make this easy in TypeScript.
             </ImageAndText>
 
             <div id='get-started'>
