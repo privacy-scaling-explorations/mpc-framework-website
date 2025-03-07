@@ -53,20 +53,32 @@ export default function Home() {
             <div id='get-started'>
                 <CtaCards
                     title='Get started in minutes, not hours'
-                    subtitle="Boilerplate your project in a few simple steps. Get instructions for setting up an Eightshift DevKit theme or plugin, run a command (or two) and start coding. It's that easy!"
+                    subtitle="MPC Hello provides template projects to get you started quickly. Choose the one that's right for you and start building your MPC app today."
                     cards={[
                         {
+                            icon: icons.puzzleOpenJob,
+                            text: 'Client ↔ Client',
+                            buttonLabel: 'Open Template',
+                            buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/client-client',
+                        },
+                        {
                             icon: icons.frontendDevelopment,
-                            text: 'I want a new WordPress theme',
-                            buttonLabel: 'New theme',
-                            buttonUrl: '/docs/theme',
+                            text: 'Client ↔ Server',
+                            buttonLabel: 'Open Template',
+                            buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/client-server',
+                        },
+                        {
+                            icon: icons.frontendDevelopment,
+                            text: 'Server ↔ Server',
+                            buttonLabel: 'Open Template',
+                            buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/server-server',
                         },
                         {
                             icon: icons.puzzleOpenJob,
-                            text: 'I want a new WordPress plugin',
-                            buttonLabel: 'New plugin',
-                            buttonUrl: '/docs/plugin',
-                        }
+                            text: 'NextJS ↔ NextJS',
+                            buttonLabel: 'Open Template',
+                            buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/next-js',
+                        },
                     ]}
                 />
             </div>
