@@ -84,49 +84,29 @@ export default function Home() {
             </div>
 
             <TextCards
-                title='Batteries included'
-                subtitle="The DevKit is feature-packed, with a bunch of cool things making the lives of developers and end-users easier!"
+                title='Why MPC Matters'
+                subtitle="For most, MPC is uncharted territory, which can make it challenging to connect it with real-world problems. Here are some examples."
                 cards={[
                     {
-                        title: 'Custom Block Editor blocks',
-                        subtitle: "Build a dynamic block faster than you can say Gutenberg. With automatic block registration and top-notch attribute handling, you'll be shipping blocks in record time.",
+                        title: 'Medical Research',
+                        subtitle: "Researchers need to leverage sensitive patient data to make breakthroughs. MPC can make that easier and safer.",
                     },
                     {
-                        title: 'Sustainable, like code should be',
-                        subtitle: 'All our code follows battle-tested programming practices. OOP? Check. Unit tests? Double-check. Code doc blocks, linters for coding standards and great documentation? Triple-check.'
+                        title: 'Auctions',
+                        subtitle: 'Auctions are an extremely important economic tool because they improve trading efficiency. MPC can expand auction participation because it allows bidders to keep most of their price information secret.',
                     },
                     {
-                        title: 'Eightshift Libs',
-                        subtitle: 'Library aimed at bringing the modern development tools to your project.'
+                        title: 'Asset Swaps',
+                        subtitle: 'I have stuff. You have stuff. If we swapped stuff, we might have better stuff. MPC can help us swap the best stuff.',
                     },
                     {
-                        title: 'WP Boilerplate',
-                        subtitle: "Include features you need, and leave out the ones you don't using our powerful WP-CLI tooling."
+                        title: 'Social Matching',
+                        subtitle: "People have sensitive reasons for wanting to connect with others. MPC can help people find each other without disclosing those reasons.",
                     },
                     {
-                        title: 'As responsive as it can get',
-                        subtitle: 'Declare breakpoints once, use them everywhere — from media queries to blocks. Override any attribute value for particular breakpoints without breaking a sweat. Need to tweak that width for tablets? Done.'
+                        title: 'Private Personalized Insurance',
+                        subtitle: 'The best insurance policies require lots of sensitive information. But exactly how that sensitive information is used is itself sensistive. MPC can reveal this hidden compatibility and/or price information without revealing anything else.',
                     },
-                    {
-                        title: 'A build process to love',
-                        subtitle: 'Eightshift Development kit comes with Webpack pre-configured, so you can start building your JavaScript and CSS assets from the start. Vendor prefixes? Polyfills? SCSS compilation? Asset minification? All taken care of!'
-                    },
-                    {
-                        title: 'First-class CSS variables',
-                        subtitle: 'Forget about conditional classnames: build out CSS variables from attribute values and scope them to a particular block with almost no code.'
-                    },
-                    {
-                        title: 'Cache busting',
-                        subtitle: "Each time you build assets, we generate a new URL for each asset file. This means you'll never see the old cached version while developing or after pushing your code to production."
-                    },
-                    {
-                        title: 'OOP: The good way to write PHP code',
-                        subtitle: 'Object-oriented programming is at the core of Eightshift Development kit, making your projects cleaner and allowing you to extend and replace functionality.'
-                    },
-                    {
-                        title: 'Eightshift Frontend Libs',
-                        subtitle: 'A collection of useful front-end utility modules and all the tools you need to start building modern Block Editor dynamic blocks.'
-                    }
                 ]}
             />
 
