@@ -2,9 +2,11 @@ import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
-import { Hero, ImageAndText, CtaCards, TextCards, FeatureShowcase, CtaImageButton, icons } from '@infinum/docusaurus-theme';
+import { Hero, ImageAndText, TextCards, FeatureShowcase, icons } from '@infinum/docusaurus-theme';
+
 import { EsOpenSource } from '../theme/sections/os-projects';
 import { EsOsFreebies } from '../theme/sections/os-freebies';
+import { CtaCards } from '../../ui-components/components/CtaCards';
 
 export default function Home() {
     const context = useDocusaurusContext();
@@ -55,6 +57,12 @@ export default function Home() {
                     title='Get started in minutes, not hours'
                     subtitle="MPC Hello provides template projects to get you started quickly. Choose the one that's right for you and start building your MPC app today."
                     cards={[
+                        {
+                            icon: icons.frontendDevelopment2,
+                            text: 'Try It Out',
+                            buttonLabel: 'Launch Demo',
+                            buttonUrl: 'https://voltrevo.github.io/mpc-hello/',
+                        },
                         {
                             icon: icons.puzzleOpenJob,
                             text: 'Client ↔ Client',
