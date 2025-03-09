@@ -115,16 +115,6 @@ export default function Home() {
                     },
                 ]}
             />
-
-            <FeatureShowcase
-                title='An editing experience content editors will love'
-                text='Provide the ease of use and flexibility that your content editors crave for. Rely on our user-friendly default blocks or use plug&play editor components to build great experiences.'
-                imageUrl='/img/pentagram.svg'
-                gray
-            />
-
-            <EsOpenSource />
-            <EsOsFreebies />
         </Layout>
     );
 }
