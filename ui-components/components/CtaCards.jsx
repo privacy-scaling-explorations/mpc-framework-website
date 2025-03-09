@@ -21,18 +21,17 @@ export const CtaCards = (props) => {
     } = props;
 
     return (
-        <div className=' gap-gutter px-side-padding p-side-padding py-10 desktop:pt-24 desktop:pb-36 desktop:grid desktop:grid-cols-12 desktop:auto-rows-auto'>
+        <div className='cta-cards gap-gutter px-side-padding p-side-padding py-10 desktop:pt-24 desktop:pb-36 desktop:grid desktop:grid-cols-12 desktop:auto-rows-auto'>
             <div className='col-start-1 col-span-3 row-start-1 row-span-full mb-10 desktop:mb-0 max-w-xl'>
                 <h3 className='text-36 font-bold mb-4 desktop:mb-1'>{title}</h3>
                 <p className='text-16'>{subtitle}</p>
             </div>
 
             <div className='col-start-5 col-span-8 flex flex-col items-start gap-y-20 desktop:grid desktop:grid-cols-fit20 desktop:auto-rows-auto desktop:gap-x-gutter'>
-                {cards.map(({ icon, text, buttonLabel, buttonUrl }, i) => {
+                {cards.map(({ text, buttonLabel, buttonUrl }, i) => {
                     return (
-                        <div key={i}>
-                            <div className='w-20 h-20 bg-infinum text-white rounded-full flex items-center justify-center mb-5'>{React.cloneElement(icon, {className: 'w-20 h-20'})}</div>
-                            <h4 className='text-h3 font-bold font-display mb-10 max-w-prose-mini'>{text}</h4>
+                        <div className="cta-card" key={i}>
+                            <h4 className='cta-card-text text-h3 font-bold font-display mb-10 max-w-prose-mini'>{text}</h4>
                             {buttonLabel && buttonUrl &&
                                 <Button label={buttonLabel} url={buttonUrl} />
                             }

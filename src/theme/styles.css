@@ -103,3 +103,7 @@
     flex-direction: row;
     gap: 5px;
 }
+
+.cta-card-text {
+    margin-bottom: 1rem !important;
+}

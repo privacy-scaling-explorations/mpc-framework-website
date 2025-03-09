@@ -7,6 +7,7 @@ import { Hero, ImageAndText, TextCards, FeatureShowcase, icons } from '@infinum/
 import { EsOpenSource } from '../theme/sections/os-projects';
 import { EsOsFreebies } from '../theme/sections/os-freebies';
 import { CtaCards } from '../../ui-components/components/CtaCards';
+import { Button } from '../../ui-components/components/Button';
 
 export default function Home() {
     const context = useDocusaurusContext();
@@ -55,34 +56,27 @@ export default function Home() {
             <div id='get-started'>
                 <CtaCards
                     title='Get started in minutes, not hours'
-                    subtitle="MPC Hello provides template projects to get you started quickly. Choose the one that's right for you and start building your MPC app today."
+                    subtitle={<>
+                        MPC Hello provides template projects to get you started quickly. Choose the one that's right for you and start building your MPC app today.
+                        <div style={{ marginTop: '1rem', marginBottom: '5rem' }}><Button label="Launch Demo" url="https://voltrevo.github.io/mpc-hello/"/></div>
+                    </>}
                     cards={[
                         {
-                            icon: icons.frontendDevelopment2,
-                            text: 'Try It Out',
-                            buttonLabel: 'Launch Demo',
-                            buttonUrl: 'https://voltrevo.github.io/mpc-hello/',
-                        },
-                        {
-                            icon: icons.puzzleOpenJob,
                             text: 'Client ↔ Client',
                             buttonLabel: 'Open Template',
                             buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/client-client',
                         },
                         {
-                            icon: icons.frontendDevelopment,
                             text: 'Client ↔ Server',
                             buttonLabel: 'Open Template',
                             buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/client-server',
                         },
                         {
-                            icon: icons.frontendDevelopment,
                             text: 'Server ↔ Server',
                             buttonLabel: 'Open Template',
                             buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/server-server',
                         },
                         {
-                            icon: icons.puzzleOpenJob,
                             text: 'NextJS ↔ NextJS',
                             buttonLabel: 'Open Template',
                             buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/next-js',
@@ -113,7 +107,11 @@ export default function Home() {
                     },
                     {
                         title: 'Private Personalized Insurance',
-                        subtitle: 'The best insurance policies require lots of sensitive information. But exactly how that sensitive information is used is itself sensistive. MPC can reveal this hidden compatibility and/or price information without revealing anything else.',
+                        subtitle: 'The best insurance policies require lots of sensitive information. But exactly how that sensitive information is used is itself sensitive. MPC can reveal this hidden compatibility and/or price information without revealing anything else.',
+                    },
+                    {
+                        title: 'Salary Comparison',
+                        subtitle: 'Employees would like to know how their salary compares to others. With MPC, employees can skip to the statistics without revealing anyone\'s individual salary along the way.',
                     },
                 ]}
             />
