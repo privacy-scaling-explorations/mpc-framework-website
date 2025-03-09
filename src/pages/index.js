@@ -2,10 +2,11 @@ import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
-import { Hero, ImageAndText, TextCards } from '@infinum/docusaurus-theme';
+import { Hero, TextCards } from '@infinum/docusaurus-theme';
 
 import { CtaCards } from '../../ui-components/components/CtaCards';
 import { Button } from '../../ui-components/components/Button';
+import { ImageAndText } from '../../ui-components/components/ImageAndText';
 
 export default function Home() {
     const context = useDocusaurusContext();
