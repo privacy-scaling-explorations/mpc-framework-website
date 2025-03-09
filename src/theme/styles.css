@@ -104,6 +104,10 @@
     gap: 5px;
 }
 
+.footer {
+    text-align: center;
+}
+
 .cta-card-text {
     margin-bottom: 1rem !important;
 }
