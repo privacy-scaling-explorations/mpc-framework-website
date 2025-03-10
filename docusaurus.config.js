@@ -108,24 +108,6 @@ module.exports = {
         ],
     ],
     plugins: [
-        [
-            '@docusaurus/plugin-content-docs',
-            {
-                id: 'forms',
-                path: 'forms',
-                routeBasePath: 'forms',
-                sidebarPath: require.resolve('./sidebars-forms.js'),
-            },
-        ],
-        [
-            '@docusaurus/plugin-content-docs',
-            {
-                id: 'ui-components',
-                path: 'ui-components',
-                routeBasePath: 'components',
-                sidebarPath: require.resolve('./sidebars-components.js'),
-            },
-        ],
         'es-text-loader',
     ],
     customFields: {

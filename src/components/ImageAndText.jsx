@@ -1,5 +1,3 @@
-import { classnames } from '../../utils/classnames';
-
 /**
  * Section with an image on the left, title and variable content on the right.
  *

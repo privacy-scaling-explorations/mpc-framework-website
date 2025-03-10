@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { ShowcaseCard, CtaImageButton } from '@infinum/docusaurus-theme';
-import { EsOpenSource } from '../os-projects';
 
 const shuffleArray = (array) => array.map(value => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
