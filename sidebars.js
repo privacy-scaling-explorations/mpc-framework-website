@@ -1,6 +1,7 @@
 module.exports = {
     docs: [
         'quick-guide',
-        'welcome',
+        'what-is-mpc',
+        'summon',
     ],
 };

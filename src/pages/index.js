@@ -46,8 +46,8 @@ export default function Home() {
                 <br />
                 <br />
                 It's not actually magic, but <b>M</b>ulti-<b>P</b>arty <b>C</b>omputation is
-                a cryptographic protocol which achieves the same thing. Inputs are encoded as
-                bits and questions are formalized as boolean circuits over those bits. MPC
+                a class of cryptographic protocols which achieve the same thing. Inputs are encoded
+                as bits and questions are formalized as boolean circuits over those bits. MPC
                 Framework provides tools to make this easy in TypeScript.
             </ImageAndText>
 
