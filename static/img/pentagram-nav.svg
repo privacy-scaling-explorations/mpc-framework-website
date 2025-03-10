@@ -1,0 +1,20 @@
+<svg width="1470" height="200" viewBox="-110 -110 1480 210" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define gradient -->
+  <defs>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#800080"/> <!-- Dark Purple -->
+      <stop offset="100%" stop-color="#DDA0DD"/> <!-- Lighter Purple -->
+    </linearGradient>
+  </defs>
+
+  <!-- Pentagon -->
+  <polygon points="0,-100 95,-31 59,81 -59,81 -95,-31" fill="url(#purpleGradient)" stroke="purple" stroke-width="3"/>
+
+  <!-- Pentagram -->
+  <polygon points="0,-97 57,78 -92,-30 92,-30 -57,78" fill="none" stroke="black" stroke-width="3"/>
+
+  <!-- Text -->
+  <text x="180" y="10" font-family="Arial" font-weight="bold" font-size="150" fill="black" text-anchor="start" alignment-baseline="middle">
+    MPC Framework
+  </text>
+</svg>
