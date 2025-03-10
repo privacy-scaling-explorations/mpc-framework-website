@@ -92,9 +92,9 @@ module.exports = {
                     ],
                 },
                 blog: {
-                    blogTitle: 'Tutorials and articles about Eightshift development kit',
+                    blogTitle: 'Tutorials and articles about MPC Framework',
                     blogDescription:
-                        'Tutorials and articles about Eightshift development kit',
+                        'Tutorials and articles about MPC Framework',
                     blogSidebarTitle: 'Latest posts',
                     showReadingTime: true,
                     postsPerPage: 9,
@@ -111,14 +111,16 @@ module.exports = {
     ],
     customFields: {
         keywords: [
-            'wordpress tools',
-            'development tools',
-            'wordpress project',
-            'Gutenberg blocks',
-            'development kit',
-            'wordpress kit',
-            'devkit',
+            'MPC',
+            'cryptography',
+            'multi-party computation',
+            'typescript',
+            'framework',
+            'secure',
+            'privacy',
+            'security',
+            'boolean circuits',
         ],
-        image: 'img-why-boilerplate@2x.png',
+        image: 'pentagram.png',
     },
 };

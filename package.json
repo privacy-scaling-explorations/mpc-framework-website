@@ -1,27 +1,30 @@
 {
-    "name": "@eightshift/docs",
-    "version": "9.1.1",
-    "description": "A documentation website for Eightshift open source projects.",
+    "name": "mpc-framework-website",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Website for MPC Framework.",
     "author": {
-        "name": "Eightshift team",
-        "email": "team@eightshift.com",
-        "url": "https://eightshift.com/"
+        "name": "MPC Framework team",
+        "email": "andrew.morris@pse.dev",
+        "url": "https://mpc.pse.dev/"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/infinum/eightshift-docs.git"
+        "url": "git+https://github.com/voltrevo/mpc-framework-website.git"
     },
     "keywords": [
-        "frontend",
-        "scss",
-        "mixin",
-        "js",
-        "utility",
-        "module",
-        "WordPress"
+        "MPC",
+        "cryptography",
+        "multi-party computation",
+        "typescript",
+        "framework",
+        "secure",
+        "privacy",
+        "security",
+        "boolean circuits"
     ],
     "bugs": {
-        "url": "https://github.com/infinum/eightshift-docs/issues"
+        "url": "https://github.com/voltrevo/mpc-framework-website/issues"
     },
     "scripts": {
         "docusaurus": "docusaurus",
