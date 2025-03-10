@@ -101,7 +101,7 @@
 .social-icons {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 0.7rem;
 }
 
 .footer {
@@ -110,4 +110,8 @@
 
 .cta-card-text {
     margin-bottom: 1rem !important;
+}
+
+#get-started {
+    margin-bottom: 2rem;
 }

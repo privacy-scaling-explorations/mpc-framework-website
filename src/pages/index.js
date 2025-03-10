@@ -32,7 +32,6 @@ export default function Home() {
             <ImageAndText
                 title="What is MPC?"
                 imageUrl='/img/kids-magic-burgers.webp'
-                gray
             >
                 Imagine you want to go eat with someone. You'd like to go somewhere you both like,
                 but you're apprehensive about revealing your true preferences. The other person
@@ -51,6 +50,38 @@ export default function Home() {
                 bits and questions are formalized as boolean circuits over those bits. MPC
                 Framework provides tools to make this easy in TypeScript.
             </ImageAndText>
+
+            <TextCards
+                title='Why MPC Matters'
+                subtitle="For most, MPC is uncharted territory, which can make it challenging to connect it with real-world problems. Here are some examples."
+                gray
+                cards={[
+                    {
+                        title: 'Medical Research',
+                        subtitle: "Researchers need to leverage sensitive patient data to make breakthroughs. MPC can make that easier and safer.",
+                    },
+                    {
+                        title: 'Auctions',
+                        subtitle: 'Auctions are an extremely important economic tool because they improve trading efficiency. MPC can expand auction participation because it allows bidders to keep most of their price information secret.',
+                    },
+                    {
+                        title: 'Asset Swaps',
+                        subtitle: 'I have stuff. You have stuff. If we swapped stuff, we might have better stuff. MPC can help us swap the best stuff.',
+                    },
+                    {
+                        title: 'Social Matching',
+                        subtitle: "People have sensitive reasons for wanting to connect with others. MPC can help people find each other without disclosing those reasons.",
+                    },
+                    {
+                        title: 'Private Personalized Insurance',
+                        subtitle: 'The best insurance policies require lots of sensitive information. But exactly how that sensitive information is used is itself sensitive. MPC can reveal this hidden compatibility and/or price information without revealing anything else.',
+                    },
+                    {
+                        title: 'Salary Comparison',
+                        subtitle: 'Employees would like to know how their salary compares to others. With MPC, employees can skip to the statistics without revealing anyone\'s individual salary along the way.',
+                    },
+                ]}
+            />
 
             <div id='get-started'>
                 <CtaCards
@@ -83,37 +114,6 @@ export default function Home() {
                     ]}
                 />
             </div>
-
-            <TextCards
-                title='Why MPC Matters'
-                subtitle="For most, MPC is uncharted territory, which can make it challenging to connect it with real-world problems. Here are some examples."
-                cards={[
-                    {
-                        title: 'Medical Research',
-                        subtitle: "Researchers need to leverage sensitive patient data to make breakthroughs. MPC can make that easier and safer.",
-                    },
-                    {
-                        title: 'Auctions',
-                        subtitle: 'Auctions are an extremely important economic tool because they improve trading efficiency. MPC can expand auction participation because it allows bidders to keep most of their price information secret.',
-                    },
-                    {
-                        title: 'Asset Swaps',
-                        subtitle: 'I have stuff. You have stuff. If we swapped stuff, we might have better stuff. MPC can help us swap the best stuff.',
-                    },
-                    {
-                        title: 'Social Matching',
-                        subtitle: "People have sensitive reasons for wanting to connect with others. MPC can help people find each other without disclosing those reasons.",
-                    },
-                    {
-                        title: 'Private Personalized Insurance',
-                        subtitle: 'The best insurance policies require lots of sensitive information. But exactly how that sensitive information is used is itself sensitive. MPC can reveal this hidden compatibility and/or price information without revealing anything else.',
-                    },
-                    {
-                        title: 'Salary Comparison',
-                        subtitle: 'Employees would like to know how their salary compares to others. With MPC, employees can skip to the statistics without revealing anyone\'s individual salary along the way.',
-                    },
-                ]}
-            />
         </Layout>
     );
 }
