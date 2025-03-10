@@ -47,17 +47,16 @@ module.exports = {
                 },
             ],
         },
-        algolia: {
-            appId: 'CWB1S6U3C4',
-            apiKey: 'cbae3fc769aee256328548eff1e91c1c',
-            indexName: 'infinum_eightshift',
-            startUrls: [
-                'https://eightshift.com',
-                'https://eightshift.com/docs',
-                'https://eightshift.com/forms',
-            ],
-            contextualSearch: false,
-        },
+        // algolia: {
+        //     appId: 'TODO',
+        //     apiKey: 'TODO',
+        //     indexName: 'TODO',
+        //     startUrls: [
+        //         'https://mpc.pse.dev/',
+        //         'https://mpc.pse.dev/docs',
+        //     ],
+        //     contextualSearch: false,
+        // },
         prism: {
             theme: darkTheme,
             additionalLanguages: ['php', 'scss', 'css', 'diff'],
