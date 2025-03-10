@@ -115,3 +115,11 @@
 #get-started {
     margin-bottom: 2rem;
 }
+
+.navbar__brand {
+    padding: 0 !important;
+}
+
+.navbar__toggle {
+    padding-top: 0.25rem;
+}

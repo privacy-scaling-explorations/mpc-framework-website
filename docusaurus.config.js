@@ -24,7 +24,7 @@ module.exports = {
             title: 'MPC Framework',
             logo: {
                 alt: 'MPC Framework Logo',
-                src: '/img/pentagram.svg',
+                src: '/img/pentagram-nav.svg',
             },
             items: [
                 {
