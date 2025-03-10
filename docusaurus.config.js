@@ -34,12 +34,6 @@ module.exports = {
                     position: 'right',
                 },
                 {
-                    to: '/playground/',
-                    activeBasePath: 'playground',
-                    label: 'Playground',
-                    position: 'right',
-                },
-                {
                     to: '/blog',
                     activeBasePath: 'blog',
                     label: 'Blog',
