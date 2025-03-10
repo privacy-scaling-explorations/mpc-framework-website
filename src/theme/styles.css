@@ -123,3 +123,7 @@
 .navbar__toggle {
     padding-top: 0.25rem;
 }
+
+.blog-title {
+    text-wrap: balance;
+}
