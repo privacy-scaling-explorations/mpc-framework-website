@@ -1,0 +1,41 @@
+name: Deploy website
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  deploy-artifacts:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::490752553772:role/mpc-framework-website-assume_role-slc
+          role-duration-seconds: 900
+          aws-region: eu-central-1
+
+      - name: Install dependencies
+        run: |
+          npm i
+
+      - name: Build
+        run: |
+          npm run build
+
+      - name: Upload artifacts
+        run: |
+          aws s3 sync ./build/ s3://mpc-framework-website --delete
