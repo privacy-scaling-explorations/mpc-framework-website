@@ -1,4 +1,4 @@
-name: Deploy MPC-Framework website
+name: Deploy MPC Framework website
 on:
   push:
     branches:
