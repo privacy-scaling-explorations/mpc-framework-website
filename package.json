@@ -29,7 +29,7 @@
     "scripts": {
         "docusaurus": "docusaurus",
         "start": "docusaurus start",
-        "build": "docusaurus build",
+        "build": "docusaurus build && ./scripts/build_extras.sh",
         "deploy": "docusaurus deploy",
         "serve": "docusaurus serve",
         "clear": "docusaurus clear"

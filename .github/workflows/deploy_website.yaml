@@ -33,6 +33,8 @@ jobs:
           npm i
 
       - name: Build
+        env:
+          VITE_RTC_CONFIGURATION: ${{ secrets.VITE_RTC_CONFIGURATION }}
         run: |
           npm run build
 
