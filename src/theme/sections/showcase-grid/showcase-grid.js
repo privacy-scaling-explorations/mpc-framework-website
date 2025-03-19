@@ -18,19 +18,19 @@ export default function ShowcaseGrid(props) {
             image: useBaseUrl('img/mpc-hello.png'),
             label: 'MPC Hello',
             desc: 'The hello world of MPC!',
-            link: 'https://voltrevo.github.io/mpc-hello/',
+            link: '/apps/hello',
         },
         {
             image: useBaseUrl('img/mpc-lizard-spock.svg'),
             label: 'MPC Lizard Spock',
             desc: 'Play Rock Paper Scissors Lizard Spock while keeping your move secret.',
-            link: 'https://voltrevo.github.io/mpc-lizard-spock/',
+            link: '/apps/lizard-spock',
         },
         {
             image: useBaseUrl('img/2pc-is-for-lovers.png'),
             label: '2PC is for Lovers',
             desc: 'Secretly love your best friend? Find out if they love you back with MPC.',
-            link: 'https://voltrevo.github.io/2pc-is-for-lovers/',
+            link: '/apps/2pc-is-for-lovers',
         },
     ];
 
