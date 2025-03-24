@@ -32,6 +32,12 @@ export default function ShowcaseGrid(props) {
             desc: 'Secretly love your best friend? Find out if they love you back with MPC.',
             link: '/apps/2pc-is-for-lovers',
         },
+        {
+            image: useBaseUrl('img/jumboswap.svg'),
+            label: 'JumboSwap',
+            desc: 'Discover swap opportunities within groups.',
+            link: '/apps/jumboswap',
+        },
     ];
 
     // https://reactjs.org/docs/react-dom.html#hydrate

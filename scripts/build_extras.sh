@@ -29,8 +29,10 @@ build_app() {
     mv "build/extras-tmp/${repo_name}-main/${subdir}/dist" "build/${deploy_path}"
 }
 
-build_app "mpc-lizard-spock" "apps/lizard-spock" "." "VITE_MPC_LIZARD_SPOCK_BASE"
-build_app "2pc-is-for-lovers" "apps/2pc-is-for-lovers" "." "VITE_2PC_IS_FOR_LOVERS_BASE"
-build_app "mpc-hello" "apps/hello" "client-client" "VITE_MPC_HELLO_BASE"
+#         repo_name           deploy_path              subdir          env_var_name
+build_app "mpc-lizard-spock"  "apps/lizard-spock"      "."             "VITE_MPC_LIZARD_SPOCK_BASE"
+build_app "2pc-is-for-lovers" "apps/2pc-is-for-lovers" "."             "VITE_2PC_IS_FOR_LOVERS_BASE"
+build_app "mpc-hello"         "apps/hello"             "client-client" "VITE_MPC_HELLO_BASE"
+build_app "jumboswap"         "apps/jumboswap"         "."             "VITE_JUMBOSWAP_BASE"
 
 rm -rf build/extras-tmp
