@@ -127,3 +127,12 @@
 .blog-title {
     text-wrap: balance;
 }
+
+#hero-container > *:first-child {
+    background: url(/img/circuit-bg.webp);
+    background-size: cover;
+}
+
+.markdown img {
+    border: none;
+}
