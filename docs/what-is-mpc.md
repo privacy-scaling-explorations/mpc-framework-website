@@ -13,7 +13,7 @@ question over your combined inputs, without having to share those inputs with
 each other, or anyone else. The only thing that is revealed is the answer to
 your mutual question.
 
-![alt](/img/kids-magic-burgers.webp)
+![alt](/img/kids-magic-burgers-2.webp)
 
 ## More Formally
 

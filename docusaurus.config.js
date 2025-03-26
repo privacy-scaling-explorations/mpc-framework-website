@@ -8,7 +8,7 @@ module.exports = {
         'Create secure MPC apps easily in TypeScript.',
     url: 'https://mpc.pse.dev',
     baseUrl: '/',
-    favicon: '/img/pentagram.svg',
+    favicon: '/img/favicon.png',
     organizationName: 'PSE',
     projectName: 'mpc-framework-website',
     staticDirectories: ['static'],
@@ -24,7 +24,7 @@ module.exports = {
             title: 'MPC Framework',
             logo: {
                 alt: 'MPC Framework Logo',
-                src: '/img/pentagram-nav.svg',
+                src: '/img/logo-nav.png',
             },
             items: [
                 {
