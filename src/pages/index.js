@@ -20,18 +20,20 @@ export default function Home() {
             metaImage={useBaseUrl(`img/${siteConfig.customFields.image}`)}
             wrapperClassName='es-footer-white'
         >
-            <Hero
-                title='MPC Framework'
-                subtitle='Create secure MPC apps easily in TypeScript.'
-                buttonLabel='Get started'
-                buttonUrl='#get-started'
-                imageUrl='/img/kids-puzzle-mpc.webp'
-                gray
-            />
+            <div id='hero-container'>
+                <Hero
+                    title='MPC Framework'
+                    subtitle='Create secure MPC apps easily in TypeScript.'
+                    buttonLabel='Get started'
+                    buttonUrl='#get-started'
+                    imageUrl='/img/hands-graph5.png'
+                    gray
+                />
+            </div>
 
             <ImageAndText
                 title="What is MPC?"
-                imageUrl='/img/kids-magic-burgers.webp'
+                imageUrl='/img/kids-magic-burgers-12.webp'
             >
                 Imagine you want to go eat with someone. You'd like to go somewhere you both like,
                 but you're apprehensive about revealing your true preferences. The other person

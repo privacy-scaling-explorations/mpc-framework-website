@@ -127,3 +127,8 @@
 .blog-title {
     text-wrap: balance;
 }
+
+#hero-container > *:first-child {
+    background: url(/img/circuit-bg10.webp);
+    background-size: cover;
+}
