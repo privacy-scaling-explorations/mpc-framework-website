@@ -1,6 +1,6 @@
 ---
 title: Summon Hacking
-description: About this website. Mostly just so the blog isn't empty.
+description: A little case study into how you can make Summon your own.
 slug: summon-hacking
 authors: andrew
 date: 2025-04-11
