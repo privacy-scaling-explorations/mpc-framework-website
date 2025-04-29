@@ -2,4 +2,10 @@ andrew:
   name: Andrew Morris
   title: Team Lead
   url: https://github.com/voltrevo
-  image_url: 	https://avatars.githubusercontent.com/u/9291586?v=4
+  image_url: https://avatars.githubusercontent.com/u/9291586?v=4
+
+yanis:
+  name: Yanis Meziane
+  title: Software Engineer
+  url: https://github.com/Meyanis95
+  image_url: https://avatars.githubusercontent.com/u/67648863?v=4
