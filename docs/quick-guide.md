@@ -141,4 +141,4 @@ console.log(await session.output()); // { main: 5 }
 ## Bringing it all Together
 
 For clarity, a complete version of the example above is provided as
-[mpc-hello](https://voltrevo.github.io/mpc-hello/).
+[mpc-hello](https://mpc.pse.dev/apps/hello).
