@@ -90,7 +90,7 @@ export default function Home() {
                     title='Get started in minutes, not hours'
                     subtitle={<>
                         MPC Hello provides template projects to get you started quickly. Choose the one that's right for you and start building your MPC app today.
-                        <div style={{ marginTop: '1rem', marginBottom: '5rem' }}><Button label="Launch Demo" url="https://voltrevo.github.io/mpc-hello/"/></div>
+                        <div style={{ marginTop: '1rem', marginBottom: '5rem' }}><Button label="Launch Demo" url="https://mpc.pse.dev/apps/hello/"/></div>
                     </>}
                     cards={[
                         {
