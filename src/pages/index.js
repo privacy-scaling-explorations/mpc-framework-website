@@ -90,28 +90,28 @@ export default function Home() {
                     title='Get started in minutes, not hours'
                     subtitle={<>
                         MPC Hello provides template projects to get you started quickly. Choose the one that's right for you and start building your MPC app today.
-                        <div style={{ marginTop: '1rem', marginBottom: '5rem' }}><Button label="Launch Demo" url="https://voltrevo.github.io/mpc-hello/"/></div>
+                        <div style={{ marginTop: '1rem', marginBottom: '5rem' }}><Button label="Launch Demo" url="https://privacy-scaling-explorations.github.io/mpc-hello/"/></div>
                     </>}
                     cards={[
                         {
                             text: 'Client ↔ Client',
                             buttonLabel: 'Open Template',
-                            buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/client-client',
+                            buttonUrl: 'https://github.com/privacy-scaling-explorations/mpc-hello/tree/main/client-client',
                         },
                         {
                             text: 'Client ↔ Server',
                             buttonLabel: 'Open Template',
-                            buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/client-server',
+                            buttonUrl: 'https://github.com/privacy-scaling-explorations/mpc-hello/tree/main/client-server',
                         },
                         {
                             text: 'Server ↔ Server',
                             buttonLabel: 'Open Template',
-                            buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/server-server',
+                            buttonUrl: 'https://github.com/privacy-scaling-explorations/mpc-hello/tree/main/server-server',
                         },
                         {
                             text: 'NextJS ↔ NextJS',
                             buttonLabel: 'Open Template',
-                            buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/next-js',
+                            buttonUrl: 'https://github.com/privacy-scaling-explorations/mpc-hello/tree/main/next-js',
                         },
                     ]}
                 />

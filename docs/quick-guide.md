@@ -21,7 +21,7 @@ circuit. This is a special simplified program in the form of a fixed tree
 specifying how to combine values together. Regular programs allow the CPU to
 branch into different code paths, and circuits can't do that. It's possible to
 write these circuits by hand (or using third party tools), but you might find it
-easier to use [summon](https://github.com/voltrevo/summon/):
+easier to use [summon](https://github.com/privacy-scaling-explorations/summon/):
 
 ```ts
 // This isn't exactly TypeScript, but it uses the same syntax and has
@@ -79,7 +79,7 @@ const circuit = summon.compileBoolean(
       // Include code from step 1
       // This can be inlined or you can use build tools to just include a
       // directory from your source tree
-      // (eg https://github.com/voltrevo/mpc-hello/)
+      // (eg https://github.com/privacy-scaling-explorations/mpc-hello/)
     `,
     // Other files can be specified here
   },
@@ -141,4 +141,4 @@ console.log(await session.output()); // { main: 5 }
 ## Bringing it all Together
 
 For clarity, a complete version of the example above is provided as
-[mpc-hello](https://voltrevo.github.io/mpc-hello/).
+[mpc-hello](https://mpc.pse.dev/apps/hello).
