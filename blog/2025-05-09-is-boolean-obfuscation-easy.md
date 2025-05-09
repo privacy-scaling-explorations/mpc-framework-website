@@ -1,7 +1,7 @@
 ---
 title: Is Boolean Obfuscation Easy?
 description: Boolean obfuscation might be easy, but it seems too good to be true.
-slug: creating-this-website
+slug: is-boolean-obfuscation-easy
 authors: andrew
 date: 2025-05-09
 tags: [computer science, boolean circuits, obfuscation, indistinguishability obfuscation]
