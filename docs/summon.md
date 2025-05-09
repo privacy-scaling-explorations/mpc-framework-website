@@ -106,14 +106,14 @@ to handle larger and larger values of `input` forever.
 
 If you'd like to try your hand at Summon but you're not sure where to start, I have prepared
 some exercises you might find interesting:
-- [Check Supermajority](https://github.com/voltrevo/summon/blob/main/examples/exercises/checkSuperMajority.ts)
-- [Approval Voting](https://github.com/voltrevo/summon/blob/main/examples/exercises/approvalVoting.ts)
+- [Check Supermajority](https://github.com/privacy-scaling-explorations/summon/blob/main/examples/exercises/checkSuperMajority.ts)
+- [Approval Voting](https://github.com/privacy-scaling-explorations/summon/blob/main/examples/exercises/approvalVoting.ts)
 - TODO: exercise with in-between difficulty
-- [Sneaky Tic-Tac-Toe](https://github.com/voltrevo/summon/blob/main/examples/exercises/sneakyTicTacToe.ts)
-- [Asset Swap](https://github.com/voltrevo/summon/blob/main/examples/exercises/assetSwap.ts)
-- [Poker Hands](https://github.com/voltrevo/summon/blob/main/examples/exercises/pokerHands.ts)
+- [Sneaky Tic-Tac-Toe](https://github.com/privacy-scaling-explorations/summon/blob/main/examples/exercises/sneakyTicTacToe.ts)
+- [Asset Swap](https://github.com/privacy-scaling-explorations/summon/blob/main/examples/exercises/assetSwap.ts)
+- [Poker Hands](https://github.com/privacy-scaling-explorations/summon/blob/main/examples/exercises/pokerHands.ts)
 
-[Solutions](https://github.com/voltrevo/summon/tree/exercise-solutions/examples/exerciseSolutions).
+[Solutions](https://github.com/privacy-scaling-explorations/summon/tree/exercise-solutions/examples/exerciseSolutions).
 
 ## Why "Summon"
 

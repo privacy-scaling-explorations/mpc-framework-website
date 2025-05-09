@@ -11,7 +11,7 @@ export default function ShowcaseGrid(props) {
     const headingSubtitle = 'Awesome apps built with MPC Framework.';
     const ctaTitle = <span>Want to add your <br /> project to the list?</span>;
     const ctaSubtitle = 'Open an issue on GitHub';
-    const ctaUrl = 'https://github.com/voltrevo/mpc-framework-website/issues/new';
+    const ctaUrl = 'https://github.com/privacy-scaling-explorations/mpc-framework-website/issues/new';
 
     const itemsData = [
         {

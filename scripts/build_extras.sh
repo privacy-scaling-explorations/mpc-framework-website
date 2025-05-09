@@ -15,7 +15,7 @@ build_app() {
     local env_var_name="$4"
     
     pushd build/extras-tmp
-        curl -L -o repo.zip "https://github.com/voltrevo/${repo_name}/archive/refs/heads/main.zip"
+        curl -L -o repo.zip "https://github.com/privacy-scaling-explorations/${repo_name}/archive/refs/heads/main.zip"
         unzip repo.zip
         rm repo.zip
 

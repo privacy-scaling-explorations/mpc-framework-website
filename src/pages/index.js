@@ -96,22 +96,22 @@ export default function Home() {
                         {
                             text: 'Client ↔ Client',
                             buttonLabel: 'Open Template',
-                            buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/client-client',
+                            buttonUrl: 'https://github.com/privacy-scaling-explorations/mpc-hello/tree/main/client-client',
                         },
                         {
                             text: 'Client ↔ Server',
                             buttonLabel: 'Open Template',
-                            buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/client-server',
+                            buttonUrl: 'https://github.com/privacy-scaling-explorations/mpc-hello/tree/main/client-server',
                         },
                         {
                             text: 'Server ↔ Server',
                             buttonLabel: 'Open Template',
-                            buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/server-server',
+                            buttonUrl: 'https://github.com/privacy-scaling-explorations/mpc-hello/tree/main/server-server',
                         },
                         {
                             text: 'NextJS ↔ NextJS',
                             buttonLabel: 'Open Template',
-                            buttonUrl: 'https://github.com/voltrevo/mpc-hello/tree/main/next-js',
+                            buttonUrl: 'https://github.com/privacy-scaling-explorations/mpc-hello/tree/main/next-js',
                         },
                     ]}
                 />
