@@ -6,12 +6,12 @@ title: Quick Guide
 In addition to `mpc-framework`, you will need:
 
 - a circuit generator to turn your MPC program into a circuit (or byo precompiled or handwritten circuit)
-- an mpc-framework backend to do the underlying cryptography
+- an mpc-framework engine to do the underlying cryptography
 
 ```sh
 npm install mpc-framework
 npm install summon-ts         # circuit generator
-npm install emp-wasm-backend  # backend
+npm install emp-wasm-engine   # engine
 ```
 
 ## Step 1: Create a Circuit
@@ -24,29 +24,33 @@ write these circuits by hand (or using third party tools), but you might find it
 easier to use [summon](https://github.com/privacy-scaling-explorations/summon/):
 
 ```ts
-// This isn't exactly TypeScript, but it uses the same syntax and has
-// enough in common that you can use the .ts extension and get useful
-// intellisense
+// This isn't exactly TypeScript, but it uses the same syntax and has enough in
+// common that you can use the .ts extension and get useful intellisense
 
-export default function main(a: number, b: number) {
+export default (io: Summon.IO) => {
+  // Alice provides a number called 'a'
+  const a = io.input('alice', 'a', summon.number());
+
+  // Bob provides a number called 'b'
+  const b = io.input('bob', 'b', summon.number());
+
   let result;
 
-  // This seems like a branch that I just said is not allowed, but this
-  // is just an abstraction, and summon will compile it down to a fixed
-  // circuit. Loops are possible too. See the summon docs for more
-  // detail.
+  // This seems like a branch that I just said is not allowed, but this is just
+  // an abstraction, and summon will compile it down to a fixed circuit. Loops
+  // are possible too. See the summon docs for more detail.
   if (isLarger(a, b)) {
     result = a;
   } else {
     result = b;
   }
 
-  return result;
+  // Everyone gets an output called 'result'
+  io.outputPublic('result', result);
 }
 
-// We could inline this, but we're just demonstrating that summon
-// supports modularity (multi-file works too and many other TS
-// features).
+// We could inline this, but we're just demonstrating that summon supports
+// modularity (multi-file works too and many other TS features).
 function isLarger(a: number, b: number) {
   return a > b;
 }
@@ -61,63 +65,42 @@ import * as summon from 'summon-ts';
 
 await summon.init();
 
-const circuit = summon.compileBoolean(
-  // Specify the entry point, similar to the `main` field of
-  // package.json
-  'circuit/main.ts',
+const { circuit } = summon.compile({
+  // Specify the entry point, similar to the `main` field of package.json
+  path: 'circuit/main.ts',
 
-  // This is the bit width of numbers in your summon program. You can
-  // use any width you like, but all numbers in the program will be the
-  // same. You can achieve smaller bit widths within the program using
-  // masking (the unused gates will be optimized away). It's also
-  // possible to define classes for matrices/floats/etc.
-  16,
+  // This is the bit width of numbers in your summon program. You can use any
+  // width you like, but all numbers in the program will be the same. You can
+  // achieve smaller bit widths within the program using masking (the unused
+  // gates will be optimized away). It's also possible to define classes for
+  // matrices/floats/etc.
+  boolifyWidth: 8,
 
   // File tree to compile
-  {
+  files: {
     'circuit/main.ts': `
       // Include code from step 1
       // This can be inlined or you can use build tools to just include a
       // directory from your source tree
-      // (eg https://github.com/privacy-scaling-explorations/mpc-hello/)
+      // (eg https://github.com/privacy-scaling-explorations/mpc-hello/tree/main/client-client)
     `,
     // Other files can be specified here
   },
-);
+});
 ```
 
 ## Step 3: Set up your Protocol
 
 ```ts
 import { Protocol } from 'mpc-framework';
-import { EmpWasmBackend } from 'emp-wasm-backend';
+import { EmpWasmEngine } from 'emp-wasm-engine';
 
 // ...
 
-// Specify who provides each input, and who receives each output
-// (Our chosen backend currently requires that everyone gets all outputs)
-const mpcSettings = [
-  {
-    name: 'alice',
-    inputs: ['a'],
-    outputs: ['main'],
-  },
-  {
-    name: 'bob',
-    inputs: ['b'],
-    outputs: ['main'],
-  },
-  // You can have more than 2 parties. We're just keeping it simple here.
-];
-
-const protocol = new Protocol(
-  circuit,
-  mpcSettings,
-  new EmpWasmBackend(),
-);
+const protocol = new Protocol(circuit, new EmpWasmEngine());
 ```
 
-## Step 4: Run the Protocol
+### Step 4: Run the Protocol
 
 ```ts
 function send(to: string, msg: Uint8Array) {
@@ -128,8 +111,8 @@ const session = protocol.join('alice', { a: 3 }, send);
 
 // This is just a hypothetical API for getting external messages
 onMessageReceived((from: string, msg: Uint8Array) => {
-  // The important part is that you provide the messages to the session
-  // like this
+  // The important part is that you provide the messages to the session like
+  // this
   session.handleMessage(from, msg);
 });
 
