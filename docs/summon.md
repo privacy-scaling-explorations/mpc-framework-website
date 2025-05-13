@@ -10,17 +10,27 @@ rather different underneath.
 ## Example
 
 ```ts
+// examples/loopAdd.ts
+
 const iterations = 3;
 
-export default function main(input: number) {
+export default (io: Summon.IO) => {
+  const input = io.input("alice", "input", summon.number());
+
   let res = 0;
 
   for (let i = 0; i < iterations; i++) {
     res += input;
   }
 
-  return res;
-}
+  io.outputPublic("res", res);
+};
+```
+
+```sh
+summonc examples/loopAdd.ts
+# Note: There is also a JS api available via summon-ts. Circuit generation is
+# cheap and you can embed it inside your app.
 ```
 
 ```
@@ -38,14 +48,36 @@ export default function main(input: number) {
 // output/circuit_info.json
 
 {
-  "input_name_to_wire_index": {
-    "input": 0
-  },
-  "constants": {},
-  "output_name_to_wire_index": {
-    "main": 2
-  }
+  "constants": [],
+  "inputs": [
+    {
+      "name": "input",
+      "type": "number",
+      "address": 0,
+      "width": 1
+    }
+  ],
+  "outputs": [
+    {
+      "name": "res",
+      "type": "number",
+      "address": 2,
+      "width": 1
+    }
+  ]
 }
+```
+
+```jsonc
+// output/mpc_settings.json
+
+[
+  {
+    "name": "alice",
+    "inputs": ["input"],
+    "outputs": ["res"]
+  }
+]
 ```
 
 ## Signal-Dependent Branching
@@ -58,7 +90,13 @@ on the input. For example:
 ```ts
 // examples/greaterThan10.ts
 
-export default function main(x: number) {
+export default (io: Summon.IO) => {
+  const x = io.input("alice", "x", summon.number());
+
+  io.outputPublic("result", greaterThan10(x));
+};
+
+function greaterThan10(x: number) {
   if (x > 10) {
     return 10;
   }
@@ -108,7 +146,8 @@ If you'd like to try your hand at Summon but you're not sure where to start, I h
 some exercises you might find interesting:
 - [Check Supermajority](https://github.com/privacy-scaling-explorations/summon/blob/main/examples/exercises/checkSuperMajority.ts)
 - [Approval Voting](https://github.com/privacy-scaling-explorations/summon/blob/main/examples/exercises/approvalVoting.ts)
-- TODO: exercise with in-between difficulty
+- There's a significant difficulty gap here, but there's extensions to the first
+  two exercises that can help bridge this gap
 - [Sneaky Tic-Tac-Toe](https://github.com/privacy-scaling-explorations/summon/blob/main/examples/exercises/sneakyTicTacToe.ts)
 - [Asset Swap](https://github.com/privacy-scaling-explorations/summon/blob/main/examples/exercises/assetSwap.ts)
 - [Poker Hands](https://github.com/privacy-scaling-explorations/summon/blob/main/examples/exercises/pokerHands.ts)
