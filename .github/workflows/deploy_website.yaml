@@ -41,3 +41,7 @@ jobs:
       - name: Upload artifacts
         run: |
           aws s3 sync ./build/ s3://mpc-framework-website --delete
+
+      - name: Create invalidation request
+        run: |
+          aws cloudfront create-invalidation --distribution-id E28QOB6OXT8C4X --paths "/*"
