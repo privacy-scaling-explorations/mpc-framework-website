@@ -34,5 +34,6 @@ build_app "mpc-lizard-spock"  "apps/lizard-spock"      "."             "VITE_MPC
 build_app "2pc-is-for-lovers" "apps/2pc-is-for-lovers" "."             "VITE_2PC_IS_FOR_LOVERS_BASE"
 build_app "mpc-hello"         "apps/hello"             "client-client" "VITE_MPC_HELLO_BASE"
 build_app "jumboswap"         "apps/jumboswap"         "."             "VITE_JUMBOSWAP_BASE"
+build_app "ballpark"          "apps/ballpark"          "."             "VITE_BALLPARK_BASE"
 
 rm -rf build/extras-tmp
