@@ -38,6 +38,12 @@ export default function ShowcaseGrid(props) {
             desc: 'Discover swap opportunities within groups.',
             link: '/apps/jumboswap',
         },
+        {
+            image: useBaseUrl('img/ballpark-card.svg'),
+            label: 'Ballpark',
+            desc: 'The better way to compare compensation.',
+            link: '/apps/ballpark',
+        },
     ];
 
     // https://reactjs.org/docs/react-dom.html#hydrate
